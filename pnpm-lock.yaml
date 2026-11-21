@@ -1,0 +1,19 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dsh-next-actions:
+        specifier: link:../dsh-next-actions
+        version: link:../dsh-next-actions
+      dsh-preset-switch:
+        specifier: link:../dsh-preset-switch
+        version: link:../dsh-preset-switch
+      dsh-session-caesura:
+        specifier: link:../dsh-session-caesura
+        version: link:../dsh-session-caesura

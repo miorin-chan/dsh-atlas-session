@@ -1,0 +1,55 @@
+{
+  "name": "dsh-session-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Offers next actions, saves a private closing note, and switches Agent presets while a session is idle.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "session",
+    "aggregate"
+  ],
+  "exports": {
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "aggregate.yml",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "AGENTS.md",
+    "AGENTS.local.md",
+    "docs/README.md"
+  ],
+  "engines": {
+    "dsh": "0.2.2-rc.5"
+  },
+  "scripts": {
+    "aggregate": "node ../../tools/dsh-aggregate/cli.mjs generate .",
+    "check": "node ../../tools/dsh-aggregate/cli.mjs check .",
+    "prepack": "node ../../tools/dsh-aggregate/cli.mjs check ."
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "aggregate": {
+      "plugins": [
+        "dsh-next-actions",
+        "dsh-session-caesura",
+        "dsh-preset-switch"
+      ]
+    }
+  },
+  "dependencies": {
+    "dsh-next-actions": "link:../dsh-next-actions",
+    "dsh-session-caesura": "link:../dsh-session-caesura",
+    "dsh-preset-switch": "link:../dsh-preset-switch"
+  }
+}

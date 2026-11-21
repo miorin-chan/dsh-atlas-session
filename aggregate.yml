@@ -1,0 +1,9 @@
+name: dsh-session-atlas
+version: 0.1.0
+private: true
+engines:
+  dsh: '0.2.2-rc.5'
+plugins:
+  - dsh-next-actions
+  - dsh-session-caesura
+  - dsh-preset-switch
