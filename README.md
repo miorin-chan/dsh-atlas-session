@@ -12,6 +12,8 @@ One card, one row per enhancement, with an independent switch for each row.
   when you click the rest symbol `𝄽` beside Send after a turn.
 - [Agent mode switch](../dsh-preset-switch/README.md) lets you select a preset from the chevron by the header label
   while the session is idle.
+- [Session sounds](../dsh-session-sounds/README.md) plays sounds on macOS Desktop when a reply finishes
+  or the session needs your response.
 
 ## Install
 
@@ -21,6 +23,6 @@ Requires DeepSeek Harness 0.2.2-rc.5 with the Web client.
 2. If any source bundle is installed independently in the target profile, record its switch state and remove the bundle.
    Both forms use the same row IDs, so merely turning off a row leaves the duplicate ID in place.
 3. In **Plugins → Add plugin**, select this directory.
-   Check that its card has three rows and restore their switch states.
+   Check that its card has four rows and restore their switch states.
 
 [Project documentation](docs/README.md)

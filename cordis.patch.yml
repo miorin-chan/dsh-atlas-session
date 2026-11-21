@@ -13,3 +13,6 @@
     # dsh-preset-switch
     - id: dsh-preset-switch
       name: 'dsh-preset-switch'
+    # dsh-session-sounds
+    - id: dsh-session-sounds
+      name: 'dsh-session-sounds'

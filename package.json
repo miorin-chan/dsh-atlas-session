@@ -43,13 +43,15 @@
       "plugins": [
         "dsh-next-actions",
         "dsh-session-caesura",
-        "dsh-preset-switch"
+        "dsh-preset-switch",
+        "dsh-session-sounds"
       ]
     }
   },
   "dependencies": {
     "dsh-next-actions": "link:../dsh-next-actions",
     "dsh-session-caesura": "link:../dsh-session-caesura",
-    "dsh-preset-switch": "link:../dsh-preset-switch"
+    "dsh-preset-switch": "link:../dsh-preset-switch",
+    "dsh-session-sounds": "link:../dsh-session-sounds"
   }
 }

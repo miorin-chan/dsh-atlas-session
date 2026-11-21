@@ -7,3 +7,4 @@ plugins:
   - dsh-next-actions
   - dsh-session-caesura
   - dsh-preset-switch
+  - dsh-session-sounds

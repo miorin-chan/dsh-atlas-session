@@ -17,3 +17,6 @@ importers:
       dsh-session-caesura:
         specifier: link:../dsh-session-caesura
         version: link:../dsh-session-caesura
+      dsh-session-sounds:
+        specifier: link:../dsh-session-sounds
+        version: link:../dsh-session-sounds
