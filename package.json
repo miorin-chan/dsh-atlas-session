@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "type": "module",
-  "description": "Offers next actions, saves a private closing note, and switches Agent presets while a session is idle.",
+  "description": "A modular program for differentiable, continuous improvement of the session experience.",
   "keywords": [
     "deepseek-harness",
     "dsh",

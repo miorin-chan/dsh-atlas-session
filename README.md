@@ -1,9 +1,11 @@
-# Session Atlas
+# dsh-session-atlas
 
 [简体中文](README.zh.md)
 
-Install three in-session enhancements on one Plugins card.
-Each row has its own switch.
+**Session Modular Improvement Plan.**
+
+A modular program for differentiable, continuous improvement of the session experience.
+One card, one row per enhancement, with an independent switch for each row.
 
 - [Next actions](../dsh-next-actions/README.md) fills the composer when you select a suggestion below the reply.
 - [Closing note](../dsh-session-caesura/README.md) saves the draft as a private note in this browser
