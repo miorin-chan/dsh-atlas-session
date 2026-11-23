@@ -1,5 +1,11 @@
 # 项目文档
 
+## 安装
+
+1. 在聚合包目录运行 `pnpm install`。
+2. 如果目标 profile 已单独安装任何成员，记下开关状态，再移除独立安装的包，避免行 ID 重复。
+3. 在 **插件 → 添加插件** 选择聚合包目录，然后在新卡片恢复各成员的开关状态。
+
 [聚合清单](../aggregate.yml)声明源插件的顺序和版本范围。
 生成器复制源插件的行 ID 与初始配置。
 卡片的启停由 profile 的 bundle 选择管理，卡内开关按行 ID 管理。
@@ -25,3 +31,11 @@
 本次使用能成功导出的 `--dump-config` 核对加载配置。
 浏览器插件页的视觉和点击结果尚未验证。
 真实回复后的建议卡、结语展示和切换 preset 后的首轮仍需交互验证。
+
+## Install
+
+1. Run `pnpm install` from the bundle directory.
+2. If any member is installed separately in the target profile, note its switch state and remove its bundle
+   to avoid duplicate row IDs.
+3. In **Plugins → Add plugin**, select the bundle directory.
+   Restore the saved switch states on the new card.
