@@ -1,3 +1,5 @@
 node_modules/
 *.tgz
 .DS_Store
+/scripts/dsh-aggregate.mjs
+/scripts/dsh-aggregate.mjs.*.tmp
