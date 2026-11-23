@@ -30,9 +30,17 @@
 
 ## 维护
 
-在本目录运行 `pnpm run aggregate` 更新产物，再运行 `pnpm run check`。
-成员有变动时重新运行 `pnpm install`。
-本包通过工作区相邻目录的 `link:` 依赖安装。
+`pnpm install` 会安装清单中的固定版本并生成入库的 patch。
+`npm test` 重新生成并校验，`npm run check` 只检查漂移。
+手动生成用 `npm run build`，原有的 `pnpm run aggregate` 仍可用。新增或升级成员时，
+先更新[聚合清单](../aggregate.yml)，用 `pnpm add --save-exact --ignore-scripts <包名>@<版本>` 装齐新版本，
+再执行 `npm run build` 与 `pnpm install`，同步提交依赖清单、锁文件和 patch。
+
+联调本地成员时，先在各成员的检出目录构建，再用聚合包 `node_modules` 里的本地链接，成员版本须匹配固定版本。
+`npm pack --dry-run --json` 会重新生成 patch 并列出包内文件，可使用版本匹配的本地链接。
+发布从独立干净检出执行 `pnpm install --frozen-lockfile`，检查生成的改动并运行 `npm test`。
+发布检查要求成员来自该检出的注册表依赖树。
+包内生成器包含 YAML 解析器，可在独立检出中直接运行。
 
 在一次性 Web profile 中核对整卡、逐行启停和各功能的独立使用。
 迁移现有 profile 时，先记下各成员的开关状态，移除独立 bundle，再安装聚合卡并核对各行。
