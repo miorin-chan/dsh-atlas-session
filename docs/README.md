@@ -1,5 +1,20 @@
 # 项目文档
 
+## 使用
+
+- [下一步提示](../../dsh-next-actions/README.zh.md)。
+  点回复下方的建议，把它填入输入框继续编辑。
+- [结语笔记](../../dsh-session-caesura/README.zh.md)。
+  一轮结束后，点发送按钮旁的 `𝄽`，把草稿存为当前浏览器里的私人笔记。
+- [Agent 模式切换](../../dsh-preset-switch/README.zh.md)。
+  会话空闲时，从标题栏的 preset 名旁打开选择器。
+- [会话声音提醒](../../dsh-session-sounds/README.zh.md)。
+  在 macOS 桌面端，回复完成或会话等你响应时播放提示音。
+
+## 兼容条件
+
+需要 DeepSeek Harness `0.2.2-rc.5` 的 Web 客户端。
+
 ## 安装
 
 1. 在聚合包目录运行 `pnpm install`。
@@ -31,6 +46,21 @@
 本次使用能成功导出的 `--dump-config` 核对加载配置。
 浏览器插件页的视觉和点击结果尚未验证。
 真实回复后的建议卡、结语展示和切换 preset 后的首轮仍需交互验证。
+
+## Usage
+
+- [Next actions](../../dsh-next-actions/README.md).
+  Click a suggestion below a reply to put it in the composer for editing.
+- [Closing note](../../dsh-session-caesura/README.md).
+  After a turn, click `𝄽` beside Send to save the draft as a private note in this browser.
+- [Agent mode switch](../../dsh-preset-switch/README.md).
+  When the session is idle, open the menu beside the preset name in the header.
+- [Session sounds](../../dsh-session-sounds/README.md).
+  On macOS Desktop, hear a cue when a reply finishes or the session needs your response.
+
+## Compatibility
+
+Requires the Web client on DeepSeek Harness `0.2.2-rc.5`.
 
 ## Install
 
