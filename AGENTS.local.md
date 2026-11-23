@@ -7,6 +7,8 @@
 
 [README.md](README.md) 和 [README.zh.md](README.zh.md) 记录用户安装与使用，[项目文档](docs/README.md) 记录验证和维护。
 卡片元数据同时维护八个 locale。Markdown 用 `docs/scripts/reflow md` 重排，Git 钩子用 `prek install` 安装。
+插件详情页要整体短、每项一眼能懂。
+只展示用户当下需要知道或操作的内容，细节按需展开。
 
 ## 复用 DSH 原生界面
 
