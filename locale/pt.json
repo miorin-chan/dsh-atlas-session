@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "Plano de melhoria modular para sessões",
-    "description": "Sugestões de próximos passos, notas finais privadas, troca do modo do agente em sessões ociosas, alertas sonoros no macOS e histórico de títulos de sessão."
+    "description": "Sugestões de próximos passos, notas finais privadas, troca do modo do agente em sessões ociosas, alertas sonoros no macOS e histórico de títulos de sessão.",
+    "detail": "README.pt.md"
   }
 }

@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "Modularer Verbesserungsplan für Sitzungen",
-    "description": "Vorschläge für nächste Schritte, private Abschlussnotizen, Wechsel der Agent-Voreinstellung in inaktiven Sitzungen, Sitzungstöne unter macOS und Verlauf der Sitzungstitel."
+    "description": "Vorschläge für nächste Schritte, private Abschlussnotizen, Wechsel der Agent-Voreinstellung in inaktiven Sitzungen, Sitzungstöne unter macOS und Verlauf der Sitzungstitel.",
+    "detail": "README.de.md"
   }
 }

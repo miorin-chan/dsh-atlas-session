@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "Session Modular Improvement Plan",
-    "description": "Next actions, private closing notes, Agent preset switching in idle sessions, session sounds on macOS, and session title history."
+    "description": "Next actions, private closing notes, Agent preset switching in idle sessions, session sounds on macOS, and session title history.",
+    "detail": "README.md"
   }
 }
