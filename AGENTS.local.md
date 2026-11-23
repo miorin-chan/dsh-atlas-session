@@ -2,6 +2,7 @@
 
 本包是薄聚合 bundle。`aggregate.yml` 记录成员和顺序，`cordis.patch.yml` 和 `package.json` 的聚合字段由工具生成。
 保持源插件行 ID 和配置，行为改动留在源插件中。
+在源插件中编写源码时，除非有特殊说明，否则使用 TypeScript。
 更新成员后按[维护说明](docs/README.md#维护)安装固定版本、构建并检查，再用一次性 profile 验证启停。
 交付前从工作区执行 `node tools/new-dsh-plugin/cli.mjs --check plugins/dsh-atlas-session`。
 
