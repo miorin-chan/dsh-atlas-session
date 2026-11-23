@@ -2,17 +2,17 @@
 # Run `node tools/dsh-aggregate/cli.mjs generate <dir>` after editing the manifest.
 
 - insert:
-    # dsh-next-actions
+    # @miorin/dsh-next-actions
     - id: dsh-next-actions
-      name: 'dsh-next-actions'
+      name: '@miorin/dsh-next-actions'
       config:
         enabled: true
-    # dsh-session-caesura
+    # @miorin/dsh-session-caesura
     - id: dsh-session-caesura
-      name: 'dsh-session-caesura'
-    # dsh-preset-switch
+      name: '@miorin/dsh-session-caesura'
+    # @miorin/dsh-preset-switch
     - id: dsh-preset-switch
-      name: 'dsh-preset-switch'
-    # dsh-session-sounds
+      name: '@miorin/dsh-preset-switch'
+    # @miorin/dsh-session-sounds
     - id: dsh-session-sounds
-      name: 'dsh-session-sounds'
+      name: '@miorin/dsh-session-sounds'
