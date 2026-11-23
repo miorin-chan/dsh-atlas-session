@@ -10,6 +10,8 @@
   会话空闲时，从标题栏的 preset 名旁打开选择器。
 - [会话声音提醒](../../dsh-session-sounds/README.zh.md)。
   在 macOS 桌面端，回复完成或会话等你响应时播放提示音。
+- [会话标题历史](../../dsh-session-title-history/README.zh.md)。
+  在侧栏打开会话行的 `⋯` 菜单，选择 **标题历史**，查看标题何时生成或修改。
 
 ## 兼容条件
 
@@ -57,6 +59,9 @@
   When the session is idle, open the menu beside the preset name in the header.
 - [Session sounds](../../dsh-session-sounds/README.md).
   On macOS Desktop, hear a cue when a reply finishes or the session needs your response.
+- [Session title history](../../dsh-session-title-history/README.md).
+  In the sidebar, open the session row’s `⋯` menu and select **Title history** to see
+  when titles were generated or edited.
 
 ## Compatibility
 

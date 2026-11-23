@@ -44,7 +44,8 @@
         "@miorin/dsh-next-actions",
         "@miorin/dsh-session-caesura",
         "@miorin/dsh-preset-switch",
-        "@miorin/dsh-session-sounds"
+        "@miorin/dsh-session-sounds",
+        "@miorin/dsh-session-title-history"
       ]
     }
   },
@@ -52,6 +53,7 @@
     "@miorin/dsh-next-actions": "link:../dsh-next-actions",
     "@miorin/dsh-session-caesura": "link:../dsh-session-caesura",
     "@miorin/dsh-preset-switch": "link:../dsh-preset-switch",
-    "@miorin/dsh-session-sounds": "link:../dsh-session-sounds"
+    "@miorin/dsh-session-sounds": "link:../dsh-session-sounds",
+    "@miorin/dsh-session-title-history": "link:../dsh-session-title-history"
   }
 }

@@ -12,3 +12,5 @@ plugins:
     spec: link:../dsh-preset-switch
   - name: '@miorin/dsh-session-sounds'
     spec: link:../dsh-session-sounds
+  - name: '@miorin/dsh-session-title-history'
+    spec: link:../dsh-session-title-history

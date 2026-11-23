@@ -16,3 +16,6 @@
     # @miorin/dsh-session-sounds
     - id: dsh-session-sounds
       name: '@miorin/dsh-session-sounds'
+    # @miorin/dsh-session-title-history
+    - id: dsh-session-title-history
+      name: '@miorin/dsh-session-title-history'

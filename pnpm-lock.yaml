@@ -20,3 +20,6 @@ importers:
       '@miorin/dsh-session-sounds':
         specifier: link:../dsh-session-sounds
         version: link:../dsh-session-sounds
+      '@miorin/dsh-session-title-history':
+        specifier: link:../dsh-session-title-history
+        version: link:../dsh-session-title-history
