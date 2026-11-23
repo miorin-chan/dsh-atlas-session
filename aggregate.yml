@@ -1,16 +1,15 @@
 name: '@miorin/dsh-atlas-session'
 version: 0.1.0
-private: true
 engines:
   dsh: '0.2.2-rc.5'
 plugins:
   - name: '@miorin/dsh-next-actions'
-    spec: link:../dsh-next-actions
+    spec: 0.1.0
   - name: '@miorin/dsh-session-caesura'
-    spec: link:../dsh-session-caesura
+    spec: 0.1.0
   - name: '@miorin/dsh-preset-switch'
-    spec: link:../dsh-preset-switch
+    spec: 0.1.0
   - name: '@miorin/dsh-session-sounds'
-    spec: link:../dsh-session-sounds
+    spec: 0.1.0
   - name: '@miorin/dsh-session-title-history'
-    spec: link:../dsh-session-title-history
+    spec: 0.1.0
