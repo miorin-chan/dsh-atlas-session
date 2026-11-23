@@ -1,4 +1,4 @@
-# dsh-session-atlas
+# dsh-atlas-session
 
 [简体中文](README.zh.md)
 

@@ -1,4 +1,4 @@
-# dsh-session-atlas
+# dsh-atlas-session
 
 [English](README.md)
 
