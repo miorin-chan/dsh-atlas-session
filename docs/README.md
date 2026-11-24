@@ -14,7 +14,7 @@
   在侧栏打开会话行的 `⋯` 菜单，选择 **标题历史**，查看标题何时生成或修改；点过去标题右侧的 `↗` 可把它设回当前标题，
   对话里的 Agent 也能用 `session_title_history` 工具设回。
 
-- [君子未言](../../dsh-undo-unsent/README.zh.md)。
+- [君子未言](../../dsh-session-rewind/README.zh.md)。
   在普通用户消息的复制按钮左侧点回退图标，可将该轮消息放回输入框并归档原对话。
 
 ## 兼容条件
@@ -78,7 +78,7 @@
   when titles were generated or edited; click `↗` beside a past title to make it current again,
   or let the conversation’s Agent restore one with the `session_title_history` tool.
 
-- [Left Unsaid](../../dsh-undo-unsent/README.md).
+- [Left Unsaid](../../dsh-session-rewind/README.md).
   Click the rewind icon beside **Copy** on an ordinary user message to return it to the composer
   and archive the original conversation.
 

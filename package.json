@@ -56,7 +56,7 @@
         "@miorin/dsh-preset-switch",
         "@miorin/dsh-session-sounds",
         "@miorin/dsh-session-title-history",
-        "@miorin/dsh-undo-unsent"
+        "@miorin/dsh-session-rewind"
       ]
     }
   },
@@ -66,7 +66,7 @@
     "@miorin/dsh-preset-switch": "0.1.0",
     "@miorin/dsh-session-sounds": "0.1.0",
     "@miorin/dsh-session-title-history": "0.1.0",
-    "@miorin/dsh-undo-unsent": "link:../dsh-undo-unsent"
+    "@miorin/dsh-session-rewind": "link:../dsh-session-rewind"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

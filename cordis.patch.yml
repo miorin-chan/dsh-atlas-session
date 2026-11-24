@@ -19,6 +19,6 @@
     # @miorin/dsh-session-title-history
     - id: dsh-session-title-history
       name: '@miorin/dsh-session-title-history'
-    # @miorin/dsh-undo-unsent
-    - id: dsh-undo-unsent
-      name: '@miorin/dsh-undo-unsent'
+    # @miorin/dsh-session-rewind
+    - id: dsh-session-rewind
+      name: '@miorin/dsh-session-rewind'
