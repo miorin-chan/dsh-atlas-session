@@ -13,3 +13,5 @@ plugins:
     spec: 0.1.0
   - name: '@miorin/dsh-session-title-history'
     spec: 0.1.0
+  - name: '@miorin/dsh-undo-unsent'
+    spec: link:../dsh-undo-unsent

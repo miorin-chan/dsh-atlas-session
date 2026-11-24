@@ -14,18 +14,21 @@
   在侧栏打开会话行的 `⋯` 菜单，选择 **标题历史**，查看标题何时生成或修改；点过去标题右侧的 `↗` 可把它设回当前标题，
   对话里的 Agent 也能用 `session_title_history` 工具设回。
 
+- [君子未言](../../dsh-undo-unsent/README.zh.md)。
+  在输入框上方点待发消息下方的撤销箭头。
+
 ## 兼容条件
 
 需要 DeepSeek Harness `0.2.2-rc.5` 的 Web 客户端。
 
 ## 安装
 
-1. 在聚合包目录运行 `pnpm install`。
+1. 在同一工作区的「君子未言」目录运行 `npm ci`，再到聚合包目录运行 `pnpm install`。
 2. 如果目标 profile 已单独安装任何成员，记下开关状态，再移除独立安装的包，避免行 ID 重复。
 3. 在 **插件 → 添加插件** 选择聚合包目录，然后在新卡片恢复各成员的开关状态。
 
-[聚合清单](../aggregate.yml)声明源插件的顺序和版本范围。
-生成器复制源插件的行 ID 与初始配置。
+[聚合清单](../aggregate.yml)声明源插件的顺序和来源。
+「君子未言」使用指向同工作区源码的本地 `link:`。生成器复制源插件的行 ID 与初始配置。
 卡片的启停由 profile 的 bundle 选择管理，卡内开关按行 ID 管理。
 
 ## 维护
@@ -40,7 +43,7 @@
 联调本地成员时，先在各成员的检出目录构建，再用聚合包 `node_modules` 里的本地链接，成员版本须匹配固定版本。
 `npm pack --dry-run --json` 会重新生成 patch 并列出包内文件，可使用版本匹配的本地链接。
 发布从独立干净检出执行 `pnpm install --frozen-lockfile`，检查生成的改动并运行 `npm test`。
-发布检查要求成员来自该检出的注册表依赖树。
+发布检查要求成员来自该检出的注册表依赖树。发布前需将「君子未言」改为可从 npm 安装的固定版本。
 发布包中的 `scripts/dsh-aggregate.mjs` 包含 YAML 解析器。
 装好成员依赖后，可用 `node scripts/dsh-aggregate.mjs check .` 校验。
 
@@ -75,13 +78,16 @@
   when titles were generated or edited; click `↗` beside a past title to make it current again,
   or let the conversation’s Agent restore one with the `session_title_history` tool.
 
+- [Left Unsaid](../../dsh-undo-unsent/README.md).
+  Use the undo arrow below a pending message above the composer to withdraw it.
+
 ## Compatibility
 
 Requires the Web client on DeepSeek Harness `0.2.2-rc.5`.
 
 ## Install
 
-1. Run `pnpm install` from the bundle directory.
+1. Run `npm ci` in the Left Unsaid checkout in the same workspace, then run `pnpm install` in the bundle directory.
 2. If any member is installed separately in the target profile, note its switch state and remove its bundle
    to avoid duplicate row IDs.
 3. In **Plugins → Add plugin**, select the bundle directory.

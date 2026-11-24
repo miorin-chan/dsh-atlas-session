@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Plan d’amélioration modulaire des sessions",
-    "description": "Suggestions pour la suite, notes de clôture privées, changement de mode de l’agent pendant les pauses, alertes sonores sur macOS et historique des titres de session.",
+    "description": "Suggestions pour la suite, notes de clôture privées, changement de mode de l’agent pendant les pauses, alertes sonores sur macOS, historique des titres de session et retrait des messages en attente.",
     "detail": "README.fr.md"
   }
 }

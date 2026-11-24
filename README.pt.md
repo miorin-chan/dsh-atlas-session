@@ -2,6 +2,7 @@
 
 Receba sugestões de próximos passos, salve notas de encerramento, alterne entre predefinições do agente,
 ouça alertas e consulte o histórico de títulos das sessões.
+Use a seta de desfazer abaixo de uma mensagem pendente para retirá-la.
 Você pode ativar ou desativar cada função separadamente.
 
 [Documentação completa](docs/README.md#usage)
