@@ -17,18 +17,23 @@
 - [君子未言](../../dsh-session-rewind/README.zh.md)。
   在普通用户消息的复制按钮左侧点回退图标，可将该轮消息放回输入框并归档原对话。
 
+- [消息翻译](../../dsh-message-translate/README.zh.md)。
+  在用户消息或助手回复的操作行点翻译图标，把该条消息发给 Google 翻译并在下方显示译文。
+
 ## 兼容条件
 
 需要 DeepSeek Harness `0.2.2-rc.5` 的 Web 客户端。
 
 ## 安装
 
-1. 在同一工作区的「君子未言」目录运行 `npm ci`，再到聚合包目录运行 `pnpm install`。
+1. 在同一工作区的「君子未言」和「消息翻译」目录分别运行 `npm ci`（或 `npm install`），
+   再到聚合包目录运行 `pnpm install`。
 2. 如果目标 profile 已单独安装任何成员，记下开关状态，再移除独立安装的包，避免行 ID 重复。
 3. 在 **插件 → 添加插件** 选择聚合包目录，然后在新卡片恢复各成员的开关状态。
 
 [聚合清单](../aggregate.yml)声明源插件的顺序和来源。
-「君子未言」使用指向同工作区源码的本地 `link:`。生成器复制源插件的行 ID 与初始配置。
+「君子未言」和「消息翻译」使用指向同工作区源码的本地 `link:`。
+生成器复制源插件的行 ID 与初始配置。
 卡片的启停由 profile 的 bundle 选择管理，卡内开关按行 ID 管理。
 
 ## 维护
@@ -43,7 +48,8 @@
 联调本地成员时，先在各成员的检出目录构建，再用聚合包 `node_modules` 里的本地链接，成员版本须匹配固定版本。
 `npm pack --dry-run --json` 会重新生成 patch 并列出包内文件，可使用版本匹配的本地链接。
 发布从独立干净检出执行 `pnpm install --frozen-lockfile`，检查生成的改动并运行 `npm test`。
-发布检查要求成员来自该检出的注册表依赖树。发布前需将「君子未言」改为可从 npm 安装的固定版本。
+发布检查要求成员来自该检出的注册表依赖树。
+发布前需将「君子未言」和「消息翻译」改为可从 npm 安装的固定版本。
 发布包中的 `scripts/dsh-aggregate.mjs` 包含 YAML 解析器。
 装好成员依赖后，可用 `node scripts/dsh-aggregate.mjs check .` 校验。
 
@@ -82,13 +88,18 @@
   Click the rewind icon beside **Copy** on an ordinary user message to return it to the composer
   and archive the original conversation.
 
+- [Message translation](../../dsh-message-translate/README.md).
+  Click the translate icon in a user or assistant message’s action row to send that message to Google Translate
+  and show the result below.
+
 ## Compatibility
 
 Requires the Web client on DeepSeek Harness `0.2.2-rc.5`.
 
 ## Install
 
-1. Run `npm ci` in the Left Unsaid checkout in the same workspace, then run `pnpm install` in the bundle directory.
+1. Run `npm ci` (or `npm install`) in both the Left Unsaid and Message translation checkouts in the same workspace,
+   then run `pnpm install` in the bundle directory.
 2. If any member is installed separately in the target profile, note its switch state and remove its bundle
    to avoid duplicate row IDs.
 3. In **Plugins → Add plugin**, select the bundle directory.

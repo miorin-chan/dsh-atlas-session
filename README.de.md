@@ -4,6 +4,7 @@ Holen Sie sich Vorschläge für nächste Schritte, speichern Sie Abschlussnotize
 hören Sie Sitzungssignale und sehen Sie den Verlauf der Sitzungstitel ein.
 Klicken Sie bei einer Nutzernachricht links neben Kopieren auf das Zurückspulen-Symbol,
 um sie wieder ins Eingabefeld zu legen.
+Klicken Sie unter einer Nachricht auf das Übersetzen-Symbol, um sie mit Google Übersetzer zu übersetzen.
 Jede Funktion lässt sich separat ein- und ausschalten.
 
 [Vollständige Dokumentation](docs/README.md#usage)

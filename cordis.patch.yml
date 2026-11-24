@@ -22,3 +22,6 @@
     # @miorin/dsh-session-rewind
     - id: dsh-session-rewind
       name: '@miorin/dsh-session-rewind'
+    # @miorin/dsh-message-translate
+    - id: dsh-message-translate
+      name: '@miorin/dsh-message-translate'

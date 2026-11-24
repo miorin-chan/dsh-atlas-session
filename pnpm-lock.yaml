@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@miorin/dsh-message-translate':
+        specifier: link:../dsh-message-translate
+        version: link:../dsh-message-translate
       '@miorin/dsh-next-actions':
         specifier: 0.1.0
         version: 0.1.0

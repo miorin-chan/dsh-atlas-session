@@ -15,3 +15,5 @@ plugins:
     spec: 0.1.0
   - name: '@miorin/dsh-session-rewind'
     spec: link:../dsh-session-rewind
+  - name: '@miorin/dsh-message-translate'
+    spec: link:../dsh-message-translate
