@@ -15,7 +15,7 @@
   对话里的 Agent 也能用 `session_title_history` 工具设回。
 
 - [君子未言](../../dsh-undo-unsent/README.zh.md)。
-  在输入框上方点待发消息下方的撤销箭头。
+  在普通用户消息的复制按钮左侧点回退图标，可将该轮消息放回输入框并归档原对话。
 
 ## 兼容条件
 
@@ -79,7 +79,8 @@
   or let the conversation’s Agent restore one with the `session_title_history` tool.
 
 - [Left Unsaid](../../dsh-undo-unsent/README.md).
-  Use the undo arrow below a pending message above the composer to withdraw it.
+  Click the rewind icon beside **Copy** on an ordinary user message to return it to the composer
+  and archive the original conversation.
 
 ## Compatibility
 
