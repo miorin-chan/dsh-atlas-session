@@ -19,3 +19,5 @@ plugins:
     spec: link:../dsh-message-translate
   - name: '@miorin/dsh-composer-queue-indicator'
     spec: link:../dsh-composer-queue-indicator
+  - name: '@miorin/dsh-auto-pin-session'
+    spec: link:../dsh-auto-pin-session

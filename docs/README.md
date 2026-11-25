@@ -24,19 +24,22 @@
   会话忙碌时，若 Enter 会将草稿加入队列，按钮就显示排队图标。
   按住 Cmd 或 Ctrl 时预览 Mod+Enter 的互补动作，点击和快捷键行为不变。
 
+- [新会话自动置顶](../../dsh-auto-pin-session/README.zh.md)。
+  新会话自动出现在侧栏置顶列表最上方。
+  手动取消置顶后，重开旧会话不会重新置顶。
+
 ## 兼容条件
 
 需要 DeepSeek Harness `0.2.2-rc.5` 的 Web 客户端。
 
 ## 安装
 
-1. 在同一工作区的「君子未言」「消息翻译」和「排队发送提示」目录分别运行 `npm ci`（或 `npm install`），
-   再到聚合包目录运行 `pnpm install`。
+1. 从工作区根运行 `node tools/dsh-plugin-ts/prepare.mts plugins/dsh-atlas-session`，构建聚合包和本地成员。
 2. 如果目标 profile 已单独安装任何成员，记下开关状态，再移除独立安装的包，避免行 ID 重复。
 3. 在 **插件 → 添加插件** 选择聚合包目录，然后在新卡片恢复各成员的开关状态。
 
 [聚合清单](../aggregate.yml)声明源插件的顺序和来源。
-「君子未言」「消息翻译」和「排队发送提示」使用指向同工作区源码的本地 `link:`。
+「君子未言」「消息翻译」「排队发送提示」和「新会话自动置顶」使用指向同工作区源码的本地 `link:`。
 生成器复制源插件的行 ID 与初始配置。
 卡片的启停由 profile 的 bundle 选择管理，卡内开关按行 ID 管理。
 
@@ -55,7 +58,7 @@
 `npm pack --dry-run --json` 会重新生成 patch 并列出包内文件，可使用版本匹配的本地链接。
 发布从独立干净检出执行 `pnpm install --frozen-lockfile`，检查生成的改动并运行 `npm test`。
 发布检查要求成员来自该检出的注册表依赖树。
-发布前需将「君子未言」「消息翻译」和「排队发送提示」改为可从 npm 安装的固定版本。
+发布前需将所有本地 `link:` 成员改为可从 npm 安装的固定版本。
 发布包中的 `scripts/dsh-aggregate.mjs` 包含 YAML 解析器。
 装好成员依赖后，可用 `node scripts/dsh-aggregate.mjs check .` 校验。
 
@@ -78,6 +81,10 @@
 2026-11-24 在 DSH `0.2.2-rc.5` 的一次性 Web profile 中用 `--dump-config` 核对了八个成员行。
 用 `--patch` 单独停用和恢复排队发送提示时，其他七行保持不变；移除和重新添加聚合包后，八行一并移除和恢复。
 这项验证只覆盖配置合成，不覆盖浏览器里的图标和发送行为。
+
+2026-11-25 在相同版本的一次性 profile 中用真实 Host 创建、恢复会话并检查持久化置顶列表。
+Atlas 新增的第九行可独立停用，停用后新会话不再自动置顶，其他成员配置不变。
+没有启动 Web 监听器，未检查浏览器渲染。
 
 ## Usage
 
@@ -107,14 +114,18 @@
   Hold Cmd or Ctrl to preview Mod+Enter.
   Clicking and both shortcuts work as before.
 
+- [Auto-pin new sessions](../../dsh-auto-pin-session/README.md).
+  New sessions appear at the top of the sidebar’s pinned list.
+  Reopening a session does not pin it again.
+
 ## Compatibility
 
 Requires the Web client on DeepSeek Harness `0.2.2-rc.5`.
 
 ## Install
 
-1. Run `npm ci` (or `npm install`) in the Left Unsaid, Message translation, and Queue send indicator checkouts
-   in the same workspace, then run `pnpm install` in the bundle directory.
+1. From the workspace root, run `node tools/dsh-plugin-ts/prepare.mts plugins/dsh-atlas-session`
+   to build the bundle and its linked members.
 2. If any member is installed separately in the target profile, note its switch state and remove its bundle
    to avoid duplicate row IDs.
 3. In **Plugins → Add plugin**, select the bundle directory.

@@ -28,6 +28,9 @@
     # @miorin/dsh-composer-queue-indicator
     - id: dsh-composer-queue-indicator
       name: '@miorin/dsh-composer-queue-indicator'
+    # @miorin/dsh-auto-pin-session
+    - id: dsh-auto-pin-session
+      name: '@miorin/dsh-auto-pin-session'
     # @miorin/dsh-atlas-session (aggregate runtime)
     - id: dsh-atlas-session
       name: "@miorin/dsh-atlas-session"

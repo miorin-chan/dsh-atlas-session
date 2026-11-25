@@ -61,7 +61,8 @@
         "@miorin/dsh-session-title-history",
         "@miorin/dsh-session-rewind",
         "@miorin/dsh-message-translate",
-        "@miorin/dsh-composer-queue-indicator"
+        "@miorin/dsh-composer-queue-indicator",
+        "@miorin/dsh-auto-pin-session"
       ]
     },
     "client": {
@@ -83,7 +84,8 @@
     "@miorin/dsh-session-title-history": "0.1.0",
     "@miorin/dsh-session-rewind": "link:../dsh-session-rewind",
     "@miorin/dsh-message-translate": "link:../dsh-message-translate",
-    "@miorin/dsh-composer-queue-indicator": "link:../dsh-composer-queue-indicator"
+    "@miorin/dsh-composer-queue-indicator": "link:../dsh-composer-queue-indicator",
+    "@miorin/dsh-auto-pin-session": "link:../dsh-auto-pin-session"
   },
   "publishConfig": {
     "access": "public"

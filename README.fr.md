@@ -5,6 +5,7 @@ recevez des alertes sonores et consultez l’historique des titres de session.
 Cliquez sur l’icône de rembobinage à côté de Copier sur un message utilisateur pour le replacer dans la zone de saisie.
 Cliquez sur l’icône de traduction sous un message pour le traduire avec Google Traduction.
 Lorsque la session est occupée, l’icône Envoyer indique si un clic mettra le message en file d’attente.
+Les nouvelles sessions peuvent apparaître automatiquement en tête de la liste des sessions épinglées.
 Chaque fonction peut être activée ou désactivée séparément.
 
 [Documentation complète](docs/README.md#usage)
