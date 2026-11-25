@@ -20,19 +20,23 @@
 - [消息翻译](../../dsh-message-translate/README.zh.md)。
   在用户消息或助手回复的操作行点翻译图标，把该条消息发给 Google 翻译并在下方显示译文。
 
+- [排队发送提示](../../dsh-composer-queue-indicator/README.zh.md)。
+  会话忙碌时，如果点击原生发送按钮会将消息加入队列，按钮就显示排队图标。
+  发送行为不变。
+
 ## 兼容条件
 
 需要 DeepSeek Harness `0.2.2-rc.5` 的 Web 客户端。
 
 ## 安装
 
-1. 在同一工作区的「君子未言」和「消息翻译」目录分别运行 `npm ci`（或 `npm install`），
+1. 在同一工作区的「君子未言」「消息翻译」和「排队发送提示」目录分别运行 `npm ci`（或 `npm install`），
    再到聚合包目录运行 `pnpm install`。
 2. 如果目标 profile 已单独安装任何成员，记下开关状态，再移除独立安装的包，避免行 ID 重复。
 3. 在 **插件 → 添加插件** 选择聚合包目录，然后在新卡片恢复各成员的开关状态。
 
 [聚合清单](../aggregate.yml)声明源插件的顺序和来源。
-「君子未言」和「消息翻译」使用指向同工作区源码的本地 `link:`。
+「君子未言」「消息翻译」和「排队发送提示」使用指向同工作区源码的本地 `link:`。
 生成器复制源插件的行 ID 与初始配置。
 卡片的启停由 profile 的 bundle 选择管理，卡内开关按行 ID 管理。
 
@@ -41,15 +45,17 @@
 在 Node.js 22.18 或更新版本运行 `pnpm install`，
 安装固定版本并从 `scripts/aggregate/` 的 TypeScript 源码构建 `scripts/dsh-aggregate.mjs`，再更新入库的 patch。
 `npm test` 重新生成并校验，`npm run check` 只读检查生成器和聚合字段是否有漂移。
-手动生成用 `npm run build`，原有的 `pnpm run aggregate` 仍可用。新增或升级成员时，
-先更新[聚合清单](../aggregate.yml)，用 `pnpm add --save-exact --ignore-scripts <包名>@<版本>` 装齐新版本，
+手动生成用 `npm run build`，原有的 `pnpm run aggregate` 仍可用。
+新增或升级成员时，先更新[聚合清单](../aggregate.yml)。
+对注册表成员，用 `pnpm add --save-exact --ignore-scripts <包名>@<版本>` 装齐新版本。
+对 `link:` 成员，先构建该成员的本地源码。
 再执行 `npm run build` 与 `pnpm install`，同步提交依赖清单、锁文件和 patch。
 
 联调本地成员时，先在各成员的检出目录构建，再用聚合包 `node_modules` 里的本地链接，成员版本须匹配固定版本。
 `npm pack --dry-run --json` 会重新生成 patch 并列出包内文件，可使用版本匹配的本地链接。
 发布从独立干净检出执行 `pnpm install --frozen-lockfile`，检查生成的改动并运行 `npm test`。
 发布检查要求成员来自该检出的注册表依赖树。
-发布前需将「君子未言」和「消息翻译」改为可从 npm 安装的固定版本。
+发布前需将「君子未言」「消息翻译」和「排队发送提示」改为可从 npm 安装的固定版本。
 发布包中的 `scripts/dsh-aggregate.mjs` 包含 YAML 解析器。
 装好成员依赖后，可用 `node scripts/dsh-aggregate.mjs check .` 校验。
 
@@ -68,6 +74,10 @@
 本次使用能成功导出的 `--dump-config` 核对加载配置。
 浏览器插件页的视觉和点击结果尚未验证。
 真实回复后的建议卡、结语展示和切换 preset 后的首轮仍需交互验证。
+
+2026-11-24 在 DSH `0.2.2-rc.5` 的一次性 Web profile 中用 `--dump-config` 核对了八个成员行。
+用 `--patch` 单独停用和恢复排队发送提示时，其他七行保持不变；移除和重新添加聚合包后，八行一并移除和恢复。
+这项验证只覆盖配置合成，不覆盖浏览器里的图标和发送行为。
 
 ## Usage
 
@@ -92,14 +102,18 @@
   Click the translate icon in a user or assistant message’s action row to send that message to Google Translate
   and show the result below.
 
+- [Queue send indicator](../../dsh-composer-queue-indicator/README.md).
+  While the session is busy, the native Send button shows a queue icon when clicking it would queue the message.
+  Sending works as before.
+
 ## Compatibility
 
 Requires the Web client on DeepSeek Harness `0.2.2-rc.5`.
 
 ## Install
 
-1. Run `npm ci` (or `npm install`) in both the Left Unsaid and Message translation checkouts in the same workspace,
-   then run `pnpm install` in the bundle directory.
+1. Run `npm ci` (or `npm install`) in the Left Unsaid, Message translation, and Queue send indicator checkouts
+   in the same workspace, then run `pnpm install` in the bundle directory.
 2. If any member is installed separately in the target profile, note its switch state and remove its bundle
    to avoid duplicate row IDs.
 3. In **Plugins → Add plugin**, select the bundle directory.

@@ -25,3 +25,6 @@
     # @miorin/dsh-message-translate
     - id: dsh-message-translate
       name: '@miorin/dsh-message-translate'
+    # @miorin/dsh-composer-queue-indicator
+    - id: dsh-composer-queue-indicator
+      name: '@miorin/dsh-composer-queue-indicator'

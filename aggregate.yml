@@ -17,3 +17,5 @@ plugins:
     spec: link:../dsh-session-rewind
   - name: '@miorin/dsh-message-translate'
     spec: link:../dsh-message-translate
+  - name: '@miorin/dsh-composer-queue-indicator'
+    spec: link:../dsh-composer-queue-indicator

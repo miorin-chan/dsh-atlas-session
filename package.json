@@ -57,7 +57,8 @@
         "@miorin/dsh-session-sounds",
         "@miorin/dsh-session-title-history",
         "@miorin/dsh-session-rewind",
-        "@miorin/dsh-message-translate"
+        "@miorin/dsh-message-translate",
+        "@miorin/dsh-composer-queue-indicator"
       ]
     }
   },
@@ -68,7 +69,8 @@
     "@miorin/dsh-session-sounds": "0.1.0",
     "@miorin/dsh-session-title-history": "0.1.0",
     "@miorin/dsh-session-rewind": "link:../dsh-session-rewind",
-    "@miorin/dsh-message-translate": "link:../dsh-message-translate"
+    "@miorin/dsh-message-translate": "link:../dsh-message-translate",
+    "@miorin/dsh-composer-queue-indicator": "link:../dsh-composer-queue-indicator"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

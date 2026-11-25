@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@miorin/dsh-composer-queue-indicator':
+        specifier: link:../dsh-composer-queue-indicator
+        version: link:../dsh-composer-queue-indicator
       '@miorin/dsh-message-translate':
         specifier: link:../dsh-message-translate
         version: link:../dsh-message-translate
