@@ -63,7 +63,18 @@
         "@miorin/dsh-message-translate",
         "@miorin/dsh-composer-queue-indicator",
         "@miorin/dsh-auto-pin-session"
-      ]
+      ],
+      "defaults": {
+        "@miorin/dsh-next-actions": true,
+        "@miorin/dsh-session-caesura": true,
+        "@miorin/dsh-preset-switch": true,
+        "@miorin/dsh-session-sounds": true,
+        "@miorin/dsh-session-title-history": true,
+        "@miorin/dsh-session-rewind": true,
+        "@miorin/dsh-message-translate": true,
+        "@miorin/dsh-composer-queue-indicator": true,
+        "@miorin/dsh-auto-pin-session": true
+      }
     },
     "client": {
       "platform": "web",

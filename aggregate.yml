@@ -5,19 +5,28 @@ engines:
 plugins:
   - name: '@miorin/dsh-next-actions'
     spec: 0.1.0
+    enabled: true
   - name: '@miorin/dsh-session-caesura'
     spec: 0.1.0
+    enabled: true
   - name: '@miorin/dsh-preset-switch'
     spec: 0.1.0
+    enabled: true
   - name: '@miorin/dsh-session-sounds'
     spec: 0.1.0
+    enabled: true
   - name: '@miorin/dsh-session-title-history'
     spec: 0.1.0
+    enabled: true
   - name: '@miorin/dsh-session-rewind'
     spec: link:../dsh-session-rewind
+    enabled: true
   - name: '@miorin/dsh-message-translate'
     spec: link:../dsh-message-translate
+    enabled: true
   - name: '@miorin/dsh-composer-queue-indicator'
     spec: link:../dsh-composer-queue-indicator
+    enabled: true
   - name: '@miorin/dsh-auto-pin-session'
     spec: link:../dsh-auto-pin-session
+    enabled: true
