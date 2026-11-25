@@ -24,7 +24,7 @@
   会话忙碌时，若 Enter 会将草稿加入队列，按钮就显示排队图标。
   按住 Cmd 或 Ctrl 时预览 Mod+Enter 的互补动作，点击和快捷键行为不变。
 
-- [新会话自动置顶](../../dsh-auto-pin-session/README.zh.md)。
+- [入木三分](../../dsh-auto-pin-session/README.zh.md)。
   新会话会自动加入侧栏置顶区，发出首条消息后可看到图钉。
   手动取消置顶后，重开旧会话不会重新置顶。
 
@@ -39,7 +39,7 @@
 3. 在 **插件 → 添加插件** 选择聚合包目录，然后在新卡片恢复各成员的开关状态。
 
 [聚合清单](../aggregate.yml)声明源插件的顺序和来源。
-「君子未言」「消息翻译」「排队发送提示」和「新会话自动置顶」使用指向同工作区源码的本地 `link:`。
+「君子未言」「消息翻译」「排队发送提示」和「入木三分」使用指向同工作区源码的本地 `link:`。
 生成器复制源插件的行 ID 与初始配置。
 卡片的启停由 profile 的 bundle 选择管理，卡内开关按行 ID 管理。
 
@@ -114,7 +114,7 @@ Atlas 新增的第九行可独立停用，停用后新会话不再自动置顶�
   Hold Cmd or Ctrl to preview Mod+Enter.
   Clicking and both shortcuts work as before.
 
-- [Auto-pin new sessions](../../dsh-auto-pin-session/README.md).
+- [Pinned from the start](../../dsh-auto-pin-session/README.md).
   New sessions are pinned in the sidebar, with the pin icon visible after the first message.
   Reopening a session does not pin it again.
 
