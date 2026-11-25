@@ -21,8 +21,8 @@
   在用户消息或助手回复的操作行点翻译图标，把该条消息发给 Google 翻译并在下方显示译文。
 
 - [排队发送提示](../../dsh-composer-queue-indicator/README.zh.md)。
-  会话忙碌时，如果点击原生发送按钮会将消息加入队列，按钮就显示排队图标。
-  发送行为不变。
+  会话忙碌时，若 Enter 会将草稿加入队列，按钮就显示排队图标。
+  按住 Cmd 或 Ctrl 时预览 Mod+Enter 的互补动作，点击和快捷键行为不变。
 
 ## 兼容条件
 
@@ -103,8 +103,9 @@
   and show the result below.
 
 - [Queue send indicator](../../dsh-composer-queue-indicator/README.md).
-  While the session is busy, the native Send button shows a queue icon when clicking it would queue the message.
-  Sending works as before.
+  While the session is busy, Send shows a queue icon when Enter would queue the draft.
+  Hold Cmd or Ctrl to preview Mod+Enter.
+  Clicking and both shortcuts work as before.
 
 ## Compatibility
 
