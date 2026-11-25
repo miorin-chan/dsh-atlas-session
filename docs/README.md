@@ -114,7 +114,7 @@ Atlas 新增的第九行可独立停用，停用后新会话不再自动置顶�
   Hold Cmd or Ctrl to preview Mod+Enter.
   Clicking and both shortcuts work as before.
 
-- [Pinned from the start](../../dsh-auto-pin-session/README.md).
+- [Autopin](../../dsh-auto-pin-session/README.md).
   New sessions are pinned in the sidebar, with the pin icon visible after the first message.
   Reopening a session does not pin it again.
 
