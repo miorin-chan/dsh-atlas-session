@@ -1,7 +1,7 @@
 name: '@miorin/dsh-atlas-session'
 version: 0.1.0
 engines:
-  dsh: '0.2.2-rc.5'
+  dsh: '>=0.2.2-rc.5'
 plugins:
   - name: '@miorin/dsh-next-actions'
     spec: 0.1.0
