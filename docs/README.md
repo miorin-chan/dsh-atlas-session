@@ -25,7 +25,7 @@
   按住 Cmd 或 Ctrl 时预览 Mod+Enter 的互补动作，点击和快捷键行为不变。
 
 - [新会话自动置顶](../../dsh-auto-pin-session/README.zh.md)。
-  新会话自动出现在侧栏置顶列表最上方。
+  新会话会自动加入侧栏置顶区，发出首条消息后可看到图钉。
   手动取消置顶后，重开旧会话不会重新置顶。
 
 ## 兼容条件
@@ -115,7 +115,7 @@ Atlas 新增的第九行可独立停用，停用后新会话不再自动置顶�
   Clicking and both shortcuts work as before.
 
 - [Auto-pin new sessions](../../dsh-auto-pin-session/README.md).
-  New sessions appear at the top of the sidebar’s pinned list.
+  New sessions are pinned in the sidebar, with the pin icon visible after the first message.
   Reopening a session does not pin it again.
 
 ## Compatibility
