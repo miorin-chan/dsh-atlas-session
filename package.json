@@ -12,13 +12,16 @@
     "aggregate"
   ],
   "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg"
   },
   "files": [
     "aggregate.yml",
+    "client.js",
+    "index.js",
     "cordis.patch.yml",
-    "scripts/dsh-aggregate.mjs",
     "locale/*.json",
     "icon.svg",
     "README.md",
@@ -37,19 +40,19 @@
     "dsh": ">=0.2.2-rc.5"
   },
   "scripts": {
-    "build:tools": "node --input-type=module -e \"import { existsSync } from 'node:fs'; const entry = './scripts/aggregate/build.mts'; if (existsSync(entry)) await import(entry)\" --",
-    "build": "npm run --silent build:tools && node scripts/dsh-aggregate.mjs generate .",
-    "aggregate": "npm run build",
-    "prepare": "npm run build 1>&2",
+    "build": "node ../../tools/dsh-aggregate/src/cli.mts generate .",
+    "prepare": "node --input-type=module -e \"import { existsSync } from 'node:fs'; import { execFileSync } from 'node:child_process'; const cli = '../../tools/dsh-aggregate/src/cli.mts'; if (existsSync(cli)) execFileSync(process.execPath, [cli, 'generate', '.'], { stdio: 'inherit' })\" 1>&2",
     "test": "npm run build && npm run check",
-    "check": "npm run --silent build:tools -- --check && node scripts/dsh-aggregate.mjs check .",
-    "prepublishOnly": "npm run --silent build:tools 1>&2 && node scripts/dsh-aggregate.mjs verify-release . 1>&2"
+    "check": "node ../../tools/dsh-aggregate/src/cli.mts check .",
+    "prepublishOnly": "node ../../tools/dsh-aggregate/src/cli.mts verify-release ."
   },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
     },
     "aggregate": {
+      "version": 1,
+      "runtimeRowId": "dsh-atlas-session",
       "plugins": [
         "@miorin/dsh-next-actions",
         "@miorin/dsh-session-caesura",
@@ -59,6 +62,16 @@
         "@miorin/dsh-session-rewind",
         "@miorin/dsh-message-translate",
         "@miorin/dsh-composer-queue-indicator"
+      ]
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-ui-plugin-manager",
+        "@deepseek-ai/dsh-client-ui-slots"
       ]
     }
   },
@@ -71,10 +84,6 @@
     "@miorin/dsh-session-rewind": "link:../dsh-session-rewind",
     "@miorin/dsh-message-translate": "link:../dsh-message-translate",
     "@miorin/dsh-composer-queue-indicator": "link:../dsh-composer-queue-indicator"
-  },
-  "devDependencies": {
-    "esbuild": "0.28.2",
-    "yaml": "2.9.1"
   },
   "publishConfig": {
     "access": "public"

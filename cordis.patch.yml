@@ -28,3 +28,6 @@
     # @miorin/dsh-composer-queue-indicator
     - id: dsh-composer-queue-indicator
       name: '@miorin/dsh-composer-queue-indicator'
+    # @miorin/dsh-atlas-session (aggregate runtime)
+    - id: dsh-atlas-session
+      name: "@miorin/dsh-atlas-session"
