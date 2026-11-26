@@ -1,9 +1,10 @@
 {
   "name": "@miorin/dsh-atlas-session",
   "version": "0.2.0",
+  "private": false,
   "license": "MIT",
   "type": "module",
-  "description": "A modular program for differentiable, continuous improvement of the session experience.",
+  "description": "Next actions, private closing notes, Agent preset switching in idle sessions, session sounds on macOS, session title history, conversation rewind, message translation, an indicator for queued sends, and automatic pinning of new sessions.",
   "keywords": [
     "deepseek-harness",
     "dsh",
@@ -37,7 +38,8 @@
     "docs/README.md"
   ],
   "engines": {
-    "dsh": ">=0.2.2-rc.5"
+    "dsh": ">=0.2.2-rc.5",
+    "node": "^22.18.0 || >=24.11.0"
   },
   "scripts": {
     "build": "node ../../tools/dsh-aggregate/src/cli.mts generate .",

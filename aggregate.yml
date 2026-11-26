@@ -1,7 +1,11 @@
 name: '@miorin/dsh-atlas-session'
 version: 0.2.0
+private: false
+description: 'Next actions, private closing notes, Agent preset switching in idle sessions, session sounds on macOS, session title history, conversation rewind, message translation, an indicator for queued sends, and automatic pinning of new sessions.'
+license: MIT
 engines:
   dsh: '>=0.2.2-rc.5'
+  node: '^22.18.0 || >=24.11.0'
 plugins:
   - name: '@miorin/dsh-next-actions'
     spec: 0.1.9
