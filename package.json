@@ -88,15 +88,15 @@
     }
   },
   "dependencies": {
-    "@miorin/dsh-next-actions": "0.1.0",
-    "@miorin/dsh-session-caesura": "0.1.0",
-    "@miorin/dsh-preset-switch": "0.1.0",
-    "@miorin/dsh-session-sounds": "0.1.0",
-    "@miorin/dsh-session-title-history": "0.1.0",
-    "@miorin/dsh-session-rewind": "link:../dsh-session-rewind",
-    "@miorin/dsh-message-translate": "link:../dsh-message-translate",
-    "@miorin/dsh-composer-queue-indicator": "link:../dsh-composer-queue-indicator",
-    "@miorin/dsh-auto-pin-session": "link:../dsh-auto-pin-session"
+    "@miorin/dsh-next-actions": "0.1.9",
+    "@miorin/dsh-session-caesura": "0.1.1",
+    "@miorin/dsh-preset-switch": "0.1.1",
+    "@miorin/dsh-session-sounds": "0.1.1",
+    "@miorin/dsh-session-title-history": "0.1.1",
+    "@miorin/dsh-session-rewind": "0.1.0",
+    "@miorin/dsh-message-translate": "0.1.0",
+    "@miorin/dsh-composer-queue-indicator": "0.1.0",
+    "@miorin/dsh-auto-pin-session": "0.1.0"
   },
   "publishConfig": {
     "access": "public"

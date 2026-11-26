@@ -9,63 +9,87 @@ importers:
   .:
     dependencies:
       '@miorin/dsh-auto-pin-session':
-        specifier: link:../dsh-auto-pin-session
-        version: link:../dsh-auto-pin-session
+        specifier: 0.1.0
+        version: 0.1.0
       '@miorin/dsh-composer-queue-indicator':
-        specifier: link:../dsh-composer-queue-indicator
-        version: link:../dsh-composer-queue-indicator
+        specifier: 0.1.0
+        version: 0.1.0
       '@miorin/dsh-message-translate':
-        specifier: link:../dsh-message-translate
-        version: link:../dsh-message-translate
+        specifier: 0.1.0
+        version: 0.1.0
       '@miorin/dsh-next-actions':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.9
+        version: 0.1.9
       '@miorin/dsh-preset-switch':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.1
+        version: 0.1.1
       '@miorin/dsh-session-caesura':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.1
+        version: 0.1.1
       '@miorin/dsh-session-rewind':
-        specifier: link:../dsh-session-rewind
-        version: link:../dsh-session-rewind
+        specifier: 0.1.0
+        version: 0.1.0
       '@miorin/dsh-session-sounds':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.1
+        version: 0.1.1
       '@miorin/dsh-session-title-history':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.1
+        version: 0.1.1
 
 packages:
 
-  '@miorin/dsh-next-actions@0.1.0':
-    resolution: {integrity: sha512-dDn7WUyyYgo787prpwGAhnrCWlFx5xjVXnLXrT/He/D7XnlBtlWNuZoedPb3l8mizL/X8JHaqsUbsAtvg3ePeQ==}
-    engines: {dsh: '>=0.2.2-rc.1'}
-
-  '@miorin/dsh-preset-switch@0.1.0':
-    resolution: {integrity: sha512-k/7n5f+0gvmRi0LyeVnRL5XbCJtVayOniRsJ2cYpbr41Kg/qe/MnvSebxMC/ViXTgn2NMGI7S4vbabFs1GXCFQ==}
-    engines: {dsh: '>=0.2.2-rc.3'}
-
-  '@miorin/dsh-session-caesura@0.1.0':
-    resolution: {integrity: sha512-6ULBUqsw39iNp1d9bGxCxyYMZjx6uz7MmlfJKrPPg61rUQ/Ssq5HLK3JjI+ImrS9Sg6p5RnXpNdAKLtWQ47FOw==}
-    engines: {dsh: 0.2.2-rc.5}
-
-  '@miorin/dsh-session-sounds@0.1.0':
-    resolution: {integrity: sha512-Pluk7P+Ftw6VtTw8bjZEjKHm+p31Fn12YvUALTW+IAGefsCn3XOc8yME1eLZg2o/bOZKCJhHZGaRJw4fMc3ggQ==}
+  '@miorin/dsh-auto-pin-session@0.1.0':
+    resolution: {integrity: sha512-vPQ7x4t9PS2bmpsmS4qiFtr6/UHLZc/VER0IHyAOVJXX18HYAuh5sg8Z9M50pdWhnqN9Ee7Sxbla8X6ryOwuQQ==}
     engines: {dsh: '>=0.2.2-rc.5'}
 
-  '@miorin/dsh-session-title-history@0.1.0':
-    resolution: {integrity: sha512-R+snR9Llq+jU7vnOiBqpiWnZOC3uHnZR9oYPx8ibstyVeNwmjmYe/HZX1D86G0oZdLLd4oNvhbA2yirVTvajxQ==}
-    engines: {dsh: 0.2.2-rc.5}
+  '@miorin/dsh-composer-queue-indicator@0.1.0':
+    resolution: {integrity: sha512-qB2/ytPBX6jZBdDcwxESJd6A5AKMY100R3l7sN1Z10aAs84Pt6Xa1cN3SS4lxBokD47KKSkRdfMH56BzPAUKqA==}
+    engines: {dsh: '>=0.2.2-rc.5'}
+
+  '@miorin/dsh-message-translate@0.1.0':
+    resolution: {integrity: sha512-ExFI+eI8mNU/0phdH8O/4Z0EmUTo7U21tdT/+lAPV9x4XL7ED4U95cDZPhOFl95yaathN6exEfzknbtZHNBb1A==}
+    engines: {dsh: '>=0.2.2-rc.5'}
+
+  '@miorin/dsh-next-actions@0.1.9':
+    resolution: {integrity: sha512-mUgUtCIpy0WrWBnui/dpKCuR1eN/VklWoXyj38ZWCUroELaxLBobzv6dYynRE8ly3BQbgGOjvr9NSL167NLlEw==}
+    engines: {dsh: '>=0.2.2-rc.1'}
+
+  '@miorin/dsh-preset-switch@0.1.1':
+    resolution: {integrity: sha512-QsYq9mbqZb9CxZK1yrxNHwTYuuvEECtNh/b8/RsCGr3zFdXxVpYBbVZqU/tVB95AKH47y1AFXP4NZsHknq83YQ==}
+    engines: {dsh: '>=0.2.2-rc.3'}
+
+  '@miorin/dsh-session-caesura@0.1.1':
+    resolution: {integrity: sha512-aLmd7yYgcC+1LYk+ekE6Jss2WGmjo/ZJDqFB6EkFu155WmEklX0uPdC7XNt+FwPlLjMWj4YaRzG6Ls1WQBu0SQ==}
+    engines: {dsh: '>=0.2.2-rc.5'}
+
+  '@miorin/dsh-session-rewind@0.1.0':
+    resolution: {integrity: sha512-FemXhulsK0A+rVLsBaYpvcpvtoYjdp4fP7yblZoZiVFLRImAVoACHWvRYapQkLt3ItkGKathMdcOn/DLuvcV9Q==}
+    engines: {dsh: '>=0.2.2-rc.5'}
+
+  '@miorin/dsh-session-sounds@0.1.1':
+    resolution: {integrity: sha512-EVo3rHDJjwHzgDblbIEtL3TWggBCXr7nXc49LiIJ8XyGKyzMc3z+lKWJReO7dSJ+V1qnr9XRJnjR3uImlwHXcA==}
+    engines: {dsh: '>=0.2.2-rc.5'}
+
+  '@miorin/dsh-session-title-history@0.1.1':
+    resolution: {integrity: sha512-k6Zf71+hZSJ3OuxTrsTcmk88fEXdofCTt8zy99Gv0LD+3rbiws3qKsWGZ+MdCnPAT+skIJog3CjRCMJ6tyxMsw==}
+    engines: {dsh: '>=0.2.2-rc.5'}
 
 snapshots:
 
-  '@miorin/dsh-next-actions@0.1.0': {}
+  '@miorin/dsh-auto-pin-session@0.1.0': {}
 
-  '@miorin/dsh-preset-switch@0.1.0': {}
+  '@miorin/dsh-composer-queue-indicator@0.1.0': {}
 
-  '@miorin/dsh-session-caesura@0.1.0': {}
+  '@miorin/dsh-message-translate@0.1.0': {}
 
-  '@miorin/dsh-session-sounds@0.1.0': {}
+  '@miorin/dsh-next-actions@0.1.9': {}
 
-  '@miorin/dsh-session-title-history@0.1.0': {}
+  '@miorin/dsh-preset-switch@0.1.1': {}
+
+  '@miorin/dsh-session-caesura@0.1.1': {}
+
+  '@miorin/dsh-session-rewind@0.1.0': {}
+
+  '@miorin/dsh-session-sounds@0.1.1': {}
+
+  '@miorin/dsh-session-title-history@0.1.1': {}

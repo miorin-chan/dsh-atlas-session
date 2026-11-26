@@ -4,29 +4,29 @@ engines:
   dsh: '>=0.2.2-rc.5'
 plugins:
   - name: '@miorin/dsh-next-actions'
-    spec: 0.1.0
+    spec: 0.1.9
     enabled: true
   - name: '@miorin/dsh-session-caesura'
-    spec: 0.1.0
+    spec: 0.1.1
     enabled: true
   - name: '@miorin/dsh-preset-switch'
-    spec: 0.1.0
+    spec: 0.1.1
     enabled: true
   - name: '@miorin/dsh-session-sounds'
-    spec: 0.1.0
+    spec: 0.1.1
     enabled: true
   - name: '@miorin/dsh-session-title-history'
-    spec: 0.1.0
+    spec: 0.1.1
     enabled: true
   - name: '@miorin/dsh-session-rewind'
-    spec: link:../dsh-session-rewind
+    spec: 0.1.0
     enabled: true
   - name: '@miorin/dsh-message-translate'
-    spec: link:../dsh-message-translate
+    spec: 0.1.0
     enabled: true
   - name: '@miorin/dsh-composer-queue-indicator'
-    spec: link:../dsh-composer-queue-indicator
+    spec: 0.1.0
     enabled: true
   - name: '@miorin/dsh-auto-pin-session'
-    spec: link:../dsh-auto-pin-session
+    spec: 0.1.0
     enabled: true

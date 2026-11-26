@@ -1,3 +1,13 @@
 # esbuild uses the platform binary from its optional dependencies.
 allowBuilds:
   "esbuild@0.28.2": false
+minimumReleaseAgeExclude:
+  - '@miorin/dsh-auto-pin-session@0.1.0'
+  - '@miorin/dsh-composer-queue-indicator@0.1.0'
+  - '@miorin/dsh-message-translate@0.1.0'
+  - '@miorin/dsh-next-actions@0.1.9'
+  - '@miorin/dsh-preset-switch@0.1.1'
+  - '@miorin/dsh-session-caesura@0.1.1'
+  - '@miorin/dsh-session-rewind@0.1.0'
+  - '@miorin/dsh-session-sounds@0.1.1'
+  - '@miorin/dsh-session-title-history@0.1.1'
