@@ -1,5 +1,3 @@
-# Plan d’amélioration modulaire des sessions
-
 Recevez des suggestions pour la suite, enregistrez des notes de clôture, changez de préréglage d’agent,
 recevez des alertes sonores et consultez l’historique des titres de session.
 Cliquez sur l’icône de rembobinage à côté de Copier sur un message utilisateur pour le replacer dans la zone de saisie.
@@ -8,4 +6,4 @@ Lorsque la session est occupée, l’icône Envoyer indique si un clic mettra le
 Les nouvelles sessions peuvent être épinglées automatiquement dans la barre latérale.
 Chaque fonction peut être activée ou désactivée séparément.
 
-[Documentation complète](docs/README.md#usage)
+[Documentation complète](https://github.com/miorin-chan/dsh-atlas-session/blob/main/docs/README.md#usage)

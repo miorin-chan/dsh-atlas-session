@@ -2,6 +2,6 @@
   "meta": {
     "title": "Plano de melhoria modular para sessões",
     "description": "Sugestões de próximos passos, notas finais privadas, troca do modo do agente em sessões ociosas, alertas sonoros no macOS, histórico de títulos de sessão, retrocesso de conversas, tradução de mensagens indicador de envio em fila e fixação automática de novas sessões.",
-    "detail": "README.pt.md"
+    "detail": "docs/DETAIL.pt.md"
   }
 }

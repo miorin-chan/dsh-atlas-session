@@ -2,6 +2,6 @@
   "meta": {
     "title": "Plan de mejora modular para sesiones",
     "description": "Sugerencias de próximos pasos, notas de cierre privadas, cambio de perfil del agente en sesiones inactivas, avisos sonoros en macOS, historial de títulos de sesión, rebobinado de conversaciones, traducción de mensajes un indicador de envío en cola y la fijación automática de sesiones nuevas.",
-    "detail": "README.es.md"
+    "detail": "docs/DETAIL.es.md"
   }
 }

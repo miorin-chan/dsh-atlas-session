@@ -2,6 +2,6 @@
   "meta": {
     "title": "Modularer Verbesserungsplan für Sitzungen",
     "description": "Vorschläge für nächste Schritte, private Abschlussnotizen, Wechsel der Agent-Voreinstellung in inaktiven Sitzungen, Sitzungstöne unter macOS, Verlauf der Sitzungstitel, Zurückspulen von Unterhaltungen, Nachrichtenübersetzung eine Anzeige für das Senden per Warteschlange und automatisches Anheften neuer Sitzungen.",
-    "detail": "README.de.md"
+    "detail": "docs/DETAIL.de.md"
   }
 }
