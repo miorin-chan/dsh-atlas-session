@@ -43,8 +43,8 @@ importers:
         specifier: 0.2.2-rc.5
         version: 0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)
       '@miorin/dsh-aggregate':
-        specifier: link:../../packages/dsh-aggregate
-        version: link:../../packages/dsh-aggregate
+        specifier: 0.1.0
+        version: 0.1.0
       '@types/node':
         specifier: 22.20.5
         version: 22.20.5
@@ -233,6 +233,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@miorin/dsh-aggregate@0.1.0':
+    resolution: {integrity: sha512-NmLppV4XcK2+Au6yEg+uSzvKOTdc6rda9yDCSNhHH3pc5FYvI9WpE/KcEffvMZnXt26j04c35ku9ZdloaayP7w==}
+    engines: {node: ^22.18.0 || >=24.11.0}
+    hasBin: true
+
   '@miorin/dsh-auto-pin-session@0.1.0':
     resolution: {integrity: sha512-vPQ7x4t9PS2bmpsmS4qiFtr6/UHLZc/VER0IHyAOVJXX18HYAuh5sg8Z9M50pdWhnqN9Ee7Sxbla8X6ryOwuQQ==}
     engines: {dsh: '>=0.2.2-rc.5'}
@@ -378,6 +383,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.28.2':
     optional: true
+
+  '@miorin/dsh-aggregate@0.1.0': {}
 
   '@miorin/dsh-auto-pin-session@0.1.0': {}
 

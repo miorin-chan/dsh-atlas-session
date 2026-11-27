@@ -11,3 +11,4 @@ minimumReleaseAgeExclude:
   - '@miorin/dsh-session-rewind@0.1.0'
   - '@miorin/dsh-session-sounds@0.1.1'
   - '@miorin/dsh-session-title-history@0.1.1'
+  - '@miorin/dsh-aggregate@0.1.0'
