@@ -6,7 +6,9 @@
 更新成员后按[维护说明](docs/README.md#维护)安装固定版本、构建并检查，再用一次性 profile 验证启停。
 交付前从工作区执行 `node tools/new-dsh-plugin/cli.mts --check plugins/dsh-atlas-session`。
 
+[产品设计](DESIGN.md)是本聚合包的设计入口（修改成员范围或聚合契约前先阅读它，成功标准只写目标不标已实现/已通过）。
 [README.md](README.md) 和 [README.zh.md](README.zh.md) 记录用户安装与使用，[项目文档](docs/README.md) 记录验证和维护。
+进度、排期与调试记录留在任务记录，任务收尾前将已确认的产品决定写回 [DESIGN.md](DESIGN.md) 并在任务记录中留链接。
 卡片元数据同时维护八个 locale。Markdown 用 `docs/scripts/reflow md` 重排，Git 钩子用 `prek install` 安装。
 插件详情页要整体短、每项一眼能懂。
 只展示用户当下需要知道或操作的内容，细节按需展开。
